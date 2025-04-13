@@ -1,0 +1,66 @@
+<!--
+Karina Tumko
+ktumko@ucsc.edu
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <p>
+    <button type="button" id="clearButton">Clear Canvas</button>
+    <p>
+
+    <p>Drawing Mode:</p>
+    <button type="button" id="pointButton">Squares</button>
+    <button type="button" id="triButton">Triangles</button>
+    <button type="button" id="circleButton">Circles</button>
+
+
+
+    <p>Shape Color:</p>
+
+    Red <input type="range" min="0" max="100" value="100" class="slider" id="redSlide">
+
+    Green <input type="range" min="0" max="100" value="0" class="slider" id="greenSlide">
+
+    Blue <input type="range" min="0" max="100" value="0" class="slider" id="blueSlide">
+
+    <p>
+    Shape Size: <input type="range" min="5" max="40" value="0" class="slider" id="sizeSlide">
+    (Circles) Segment Count: <input type="range" min="5" max="25" value="10" class="slider" id="segmentsSlide">
+    </p>
+
+    <button type="button" id="drawPictureButton">Draw Picture</button>
+
+
+    <p> When the "Fill Gap Mode" button is clicked, lines will automatically be drawn to connect gaps between the brush strokes of the shapes</p>
+    <button type="button" id="fillGapButton">Fill Gap Mode</button>
+
+
+    <img src="asg1_pic.jpeg" alt="Drawing" style="max-width: 400px; display: block; margin: 20px auto;">
+
+
+
+
+
+
+
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Point.js"></script>
+    <script src="ColoredPoints.js"></script>
+  </body>
+</html>
